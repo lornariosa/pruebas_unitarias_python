@@ -32,6 +32,7 @@ def test_eliminar_libro():
     biblioteca.eliminar_libro("Asesinato para principiantes")
     assert len(biblioteca.libros) == 0
 
+
 def test_eliminar_libro_no_existente():
     biblioteca = Biblioteca()
     libro = Libro("Asesinato para principiantes", "Holly Jackson", 2014)
